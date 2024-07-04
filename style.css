@@ -4,18 +4,71 @@
 }
 
 body{
-    background-color: black;
+    height: 100%;
 }
 
-#stopwatch{
- background-color: antiquewhite;
- height: 300px;
- width: 500px;
- padding-bottom: 60px;
+header, footer{
+    height: 10%;
+    width: 100%;
+    background-color: greenyellow;
 }
 
-#list{
-    background-color: antiquewhite;
- height: 3px;
- width: 8px;
+html{
+    height: 100%;
+}
+
+main{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+main>div{
+    height: 90%;
+    width: 60%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+#stopwatch, #list{
+    height: 45%;
+    width: 90%;
+    background-color: brown;
+    border: 2px solid black;
+}
+
+
+
+
+@media ( min-width: 601px) and (max-width: 900px){
+    main>div{
+        width: 80%;
+        height: 100%;
+    }
+}
+
+
+@media (max-width: 600px){
+    
+
+    main>div{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #stopwatch, #list{
+        width: 100%;
+    }
+
+
 }
