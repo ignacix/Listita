@@ -59,12 +59,9 @@ box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
 #stopwatch{
     display: flex;
     justify-content: center;
-}
 
-#stopwatchContent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px 0px;
+
 }
 
 #stopwatch, #list{
@@ -74,6 +71,16 @@ box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
 }
 
 
+#stopwatchContent{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(60, 255, 0);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 #stopwatchContent{
     width: 40%;
@@ -88,6 +95,10 @@ box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
     main>div{
         width: 80%;
         height: 100%;
+    }
+
+    #stopwatchContent{
+
     }
 }
 
@@ -108,5 +119,8 @@ box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
         width: 100%;
     }
 
+    #stopwatchContent{
+        
+    }
 
 }
